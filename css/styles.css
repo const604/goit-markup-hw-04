@@ -7,7 +7,8 @@
   --section-team-bg-color: #f4f4fd;
   --site-backgroung-color: #e5e5e5;
   --footer-text-color: #e7e9fc;
-  --customers-color: #8E8F99;
+  --customers-color: #8e8f99;
+  --accent-social-color: #31d0aa;
 }
 
 h1,
@@ -165,8 +166,8 @@ body {
   background-color: rgba(46, 47, 66, 0.7);
   background-image: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.25)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     ),
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
@@ -230,7 +231,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px 100px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-bottom: 8px;
   background-color: var(--section-team-bg-color);
 }
@@ -352,22 +354,26 @@ body {
   align-items: center;
   justify-content: center;
   padding: 16px 32px;
-  width: 168px;
   border: 1px solid var(--customers-color);
   border-radius: 4px;
 }
 
 .customers-item:hover,
 .customers-item:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+  border-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.customers-icon {
+  fill: var(--customers-color);
+}
 
 .customers-icon:hover,
 .customers-icon:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+  fill: var(--accent-color);
 }
 
 /* Portfolio */
-
 
 .portfolio {
   padding-top: 96px;
@@ -399,6 +405,7 @@ body {
 .filters-link:hover,
 .filters-link:focus {
   background-color: var(--accent-color);
+  border-color: transparent;
   color: var(--primary-white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -418,7 +425,8 @@ body {
 
 .portfolio-card:hover,
 .portfolio-card:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-title {
@@ -509,6 +517,7 @@ body {
 
 .footer-social-item:hover,
 .footer-social-item:focus {
+  background-color: var(--accent-social-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
