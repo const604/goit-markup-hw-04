@@ -79,7 +79,7 @@ body {
 
 .site-header:hover,
 .site-header:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
 .logo {
@@ -437,12 +437,12 @@ body {
   letter-spacing: 0.02em;
 }
 
-.portfolio-link {
+.link {
   text-decoration: none;
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio-item:hover,
+.portfolio-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
